@@ -1,7 +1,3 @@
-node_modules
-coverage
 .env
-
-package.lock.json
-yarn.lock
-yarn-error.log
+.env.prod
+node_modules
