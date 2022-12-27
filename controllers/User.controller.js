@@ -4,7 +4,6 @@ const User = db.User;
 const sequelize = db.sequelize;
 
 exports.getUserById = async (req, res, next) => {
-  console.log("reached here");
   try {
     await sequelize.transaction(async (transaction) => {
       const { id } = req.params;

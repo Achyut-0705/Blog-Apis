@@ -64,7 +64,6 @@ exports.login = async (req, res, next) => {
           where: { username: username },
           transaction: transaction,
         });
-        console.log(user.dataValues);
         if (user) {
           const isPasswordValid = bcrypt.compareSync(
             password,

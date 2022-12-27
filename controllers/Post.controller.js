@@ -307,7 +307,6 @@ exports.getAllPosts = async (req, res, next) => {
       });
     });
   } catch (error) {
-    console.log(error);
     next(createError(500, "Internal server error"));
   }
 };
